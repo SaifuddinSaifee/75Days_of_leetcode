@@ -2,8 +2,8 @@ class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         # Initialize an empty string to store the merged result
         merged_string = ""
-        # Use while loop instead of for loop
-        while word1 or word2:
+        # Loop through the combined length of word1 and word2
+        for _ in range(len(word1) + len(word2)):
             # If word1 is not empty, append its first character to merged_string and remove it from word1
             if word1:
                 merged_string += word1[0]
@@ -14,5 +14,5 @@ class Solution:
                 word2 = word2[1:]
         
         return merged_string
-        # The time complexity of this code remains O(n + m) where n is the length of word1 and m is the length of word2.
-        # Using a while loop doesn't change the overall complexity, as the operations within the loop are the same.
+        # The time complexity of this code is O(n + m) where n is the length of word1 and m is the length of word2.
+        # This is because the loop iterates through the combined length of both strings
