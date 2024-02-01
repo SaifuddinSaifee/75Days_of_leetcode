@@ -1,4 +1,4 @@
-- [ ] Merge Strings Alternately
+- [X] Merge Strings Alternately
 - [ ] Greatest Common Divisor of Strings
 - [ ] Kids With the Greatest Number of Candies
 - [ ] Can Place Flowers
